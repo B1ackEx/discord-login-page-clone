@@ -12,7 +12,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 [![GitHub stars](https://img.shields.io/github/stars/Ayanprogrammer11/discord-login-page-clone?style=social)](https://github.com/Ayanprogrammer11/discord-login-page-clone/stargazers)
 
-[View Demo](https://discord-cl.netlify.app/) · [Report Bug](https://github.com/Ayanprogrammer11/discord-login-page-clone/issues) · [Request Feature](https://github.com/Ayanprogrammer11/discord-login-page-clone/issues)
+[View Demo](https://demo-discord-login.pages.dev/) · [Report Bug](https://github.com/Ayanprogrammer11/discord-login-page-clone/issues) · [Request Feature](https://github.com/Ayanprogrammer11/discord-login-page-clone/issues)
 
 </div>
 
