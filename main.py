@@ -23,4 +23,6 @@ async def login(
         "password": password
     })
 
-    return {"success": True}
+    return {
+        "success": True
+    }
