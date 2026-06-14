@@ -22,7 +22,7 @@
             <div class="authBox">
                 <div class="main-form">
 
-                    <form action="/login" method="post">
+                    <form id="loginForm" action="/login" method="post">
                         <div class="input-groups">
                             <div class="main-form-header">
                                 <h1>Welcome back!</h1>
@@ -48,9 +48,7 @@
                         </div>
                         <div class="login">
                             <button type="submit">
-                                <!-- Log In -->
-
-                                Log In
+                                    Log In
                             </button>
                         </div>
                         <div class="small-register">
@@ -93,31 +91,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
     <script src="/static/js/script.js"></script>
     <script>
+console.log("SCRIPT LOADED");
+
 const form = document.getElementById("loginForm");
+
+console.log("FORM =", form);
 
 form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
+    console.log("SUBMIT DETECTED");
+
     const formData = new FormData(form);
 
     try {
-        const res = await fetch("http://127.0.0.1:8000/login", {
+        const res = await fetch("/login", {
             method: "POST",
             body: formData
         });
 
+        console.log("RESPONSE =", res.status);
+
         const data = await res.json();
+
+        console.log("DATA =", data);
 
         if (data.success) {
             alert("Login saved 🚀");
             form.reset();
-        } else {
-            alert("Failed login");
         }
 
     } catch (err) {
-        console.log(err);
-        alert("Server error");
+        console.error(err);
     }
 });
 </script>

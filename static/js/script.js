@@ -219,9 +219,8 @@ const LoginButtonModule = {
   init() {
     if (!DOM.loginButton) return;
 
-    DOM.loginButton.addEventListener("click", (e) => {
-      e.preventDefault();
-      this.showLoading();
+    DOM.loginButton.addEventListener("click", () => {
+    this.showLoading();
     });
   },
 };
@@ -234,7 +233,6 @@ const LoginButtonModule = {
  * Prevents right-click context menu
  */
 const preventContextMenu = (e) => {
-  e.preventDefault();
 };
 
 // ==================================
