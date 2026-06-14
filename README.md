@@ -39,12 +39,6 @@ This project is **NOT affiliated with, endorsed by, or connected to Discord Inc.
 
 It is a **frontend clone created purely for educational and non-commercial purposes** to demonstrate web development skills.
 
-**DO NOT use this for:**
-
-- Phishing or impersonation
-- Collecting user credentials
-- Any malicious activities
-
 Using this project for illegal purposes is **unethical and illegal**.
 
 ---
